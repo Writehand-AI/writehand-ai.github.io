@@ -24,13 +24,13 @@
     <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"></script>
     
     <script>
-        // Replace 'openChatWidget' with the actual function provided by your chat widget's API
         window.onload = function() {
-            if (typeof openChatWidget === 'function') { 
-                openChatWidget();
+            if (window.leadConnector && window.leadConnector.chatWidget) {
+                window.leadConnector.chatWidget.openWidget();
             }
         };
     </script>
 </body>
 </html>
+
 
