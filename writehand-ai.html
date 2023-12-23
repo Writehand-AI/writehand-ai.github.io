@@ -2,9 +2,6 @@
 <html>
 <head>
     <title>Chat Widget</title>
-    <style>
-        /* You can add additional CSS styling here if needed */
-    </style>
 </head>
 <body>
     <chat-widget 
@@ -20,6 +17,7 @@
         sub-heading="Hi! Will here, co-founder of Market Estate. Enter your details below to instantly connect with us. " 
         prompt-msg="Hello! I'm Will from Customer Success. Would you like to book a demo? " 
         use-email-field="true" 
+        use-phone-field="false" <!-- Attempt to disable phone field -->
         success-msg="A member of our customer success team will contact you shortly." 
         prompt-avatar="https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/locationPhotos%2FePjoLyF5WW1qab78eFEP%2Fchat-widget-person?alt=media&token=4df3328c-9a50-4218-b4ea-613a21186664">
     </chat-widget>
@@ -27,4 +25,5 @@
     <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"></script>
 </body>
 </html>
+
 
